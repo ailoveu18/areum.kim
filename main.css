@@ -1,241 +1,50 @@
-/* General Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Add to your existing main.css or replace overlapping parts */
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
-}
-
-a {
-  color: #0077b6;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* Header */
-header {
-  background: #1f1f1f;
-  color: white;
-  padding: 20px 0;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ff6f61;
-}
-
-.nav-links a {
-  margin-left: 20px;
-  font-size: 0.95rem;
-  color: #ccc;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #fff;
-}
-
-/* Hero Section */
-.hero {
-  background: #ffffff;
-  padding: 60px 0;
-  display: flex;
-  align-items: center;
-}
-
-.hero .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-}
-
-.hero-content {
-  flex: 1 1 500px;
-}
-
-.hero-title {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.hero-description {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.hero-bio {
-  font-size: 0.95rem;
-  color: #444;
-}
-
-.social-icons {
-  margin-top: 15px;
-}
-
-.social-icon {
-  margin-right: 10px;
-  font-size: 1.2rem;
-  color: #555;
-  transition: color 0.3s;
-}
-
-.social-icon:hover {
-  color: #0077b6;
-}
-
-.hero-image img {
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* Section Styles */
-section {
-  padding: 60px 0;
-  background-color: #fff;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.section-header h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.section-divider {
-  width: 60px;
-  height: 4px;
-  background-color: #ff6f61;
-  margin: 0 auto;
-}
-
-/* Education Section */
-.education-timeline,
-.experience-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.education-item,
-.experience-item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.education-year {
-  font-weight: bold;
-  color: #ff6f61;
-}
-
-.education-content h3,
-.experience-content h4 {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-}
-
-.education-content h4 {
-  font-size: 0.95rem;
-  color: #777;
-}
-
-/* Skills */
+/* Skills Section Enhancements */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
 
-.skill-category h3 {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
+.skill-category h3 i {
+  margin-right: 10px;
+  color: #ff6f61;
 }
 
 .skill-category ul {
-  list-style: disc;
-  padding-left: 20px;
-  color: #555;
+  list-style: none;
+  padding-left: 0;
 }
 
-/* Publications Section */
-#publications .experience-item h4 i {
-  font-style: italic;
-  color: #333;
-}
-
-#publications .experience-item p {
+.skill-category ul li {
+  margin-bottom: 10px;
   font-size: 0.95rem;
-  color: #555;
 }
 
-#publications .experience-item a {
-  font-weight: 500;
+.skill-category ul li i {
   color: #0077b6;
+  margin-right: 8px;
 }
 
-/* Footer */
-footer {
-  background: #1f1f1f;
-  color: white;
-  padding: 40px 0;
+/* Social Icons (LinkedIn Full Text) */
+.social-icons {
+  margin-top: 15px;
 }
 
-.contact-info {
-  text-align: center;
-  line-height: 1.8;
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #0077b6;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
-.contact-label {
-  font-weight: bold;
-  margin-right: 5px;
+.social-icons a i {
+  margin-right: 8px;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .skills-container {
-    flex-direction: column;
-  }
+.social-icons a:hover {
+  color: #004c78;
 }
